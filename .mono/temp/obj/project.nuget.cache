@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "mwFYmsrawmx0fks4AmJ2/bH3K5r/qhw2ylxRWZ/au0N+vM4QcPdduXUFwNsIRPQ0JAX6PyQlw31s0X/jWhb8Lw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\c0bak\\SadgeGame\\SadgeGame.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\c0bak\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",
+    "C:\\Users\\c0bak\\.nuget\\packages\\microsoft.netframework.referenceassemblies.net472\\1.0.2\\microsoft.netframework.referenceassemblies.net472.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}

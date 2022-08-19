@@ -1,0 +1,9 @@
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.csproj.AssemblyReference.cache
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.AssemblyInfoInputs.cache
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.AssemblyInfo.cs
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.csproj.CoreCompileInputs.cache
+C:\Users\c0bak\SadgeGame\.mono\temp\bin\Debug\SadgeGame.dll
+C:\Users\c0bak\SadgeGame\.mono\temp\bin\Debug\SadgeGame.pdb
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.dll
+C:\Users\c0bak\SadgeGame\.mono\temp\obj\Debug\SadgeGame.pdb
