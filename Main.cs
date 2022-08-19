@@ -10,12 +10,24 @@ public class Main : Node
 	public PackedScene MobScene;
 #pragma warning restore 649
 
+	public int Score;
+	
+	private static String GetTimeStamp(DateTime value)
+	{
+		return value.ToString("MMddyyyy_HHmmss");
+	}
 
 	public void GameOver()
 	{
+		String timeStamp = GetTimeStamp(DateTime.Now);
+		String screenshotFileName = "./screenshots/game_over_" + timeStamp + ".png";
+		Console.WriteLine(screenshotFileName);
 		GetNode<HUD>("HUD").ShowGameOver();
 		GetNode<Timer>("MobTimer").Stop();
 		GetNode<Timer>("ScoreTimer").Stop();
+		Image imgData = GetViewport().GetTexture().GetData();
+		imgData.FlipY();
+		imgData.SavePng("./screenshots/game_over_" + timeStamp + ".png");
 	}
 
 	public void NewGame()
@@ -77,7 +89,6 @@ public class Main : Node
 		GetNode<Timer>("ScoreTimer").Start();
 	}
 	
-	public int Score;
 	// Declare member variables here. Examples:
 	// private int a = 2;
 	// private string b = "text";
