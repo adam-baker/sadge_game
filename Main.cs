@@ -11,16 +11,20 @@ public class Main : Node
 #pragma warning restore 649
 
 
-	private void GameOver()
+	public void GameOver()
 	{
+		GetNode<HUD>("HUD").ShowGameOver();
 		GetNode<Timer>("MobTimer").Stop();
 		GetNode<Timer>("ScoreTimer").Stop();
 	}
 
 	public void NewGame()
 	{
+		GetTree().CallGroup("Mobs", "queue_free");
 		Score = 0;
-
+		var hud = GetNode<HUD>("HUD");
+		hud.UpdateScore(Score);
+		hud.ShowMessage("Get Ready!");
 		var player = GetNode<Player>("Player");
 		var startPosition = GetNode<Position2D>("StartPosition");
 		player.Start(startPosition.Position);
@@ -63,6 +67,7 @@ public class Main : Node
 	public void _on_ScoreTimer_timeout()
 	{
 		Score++;
+		GetNode<HUD>("HUD").UpdateScore(Score);
 	}
 
 
@@ -81,7 +86,7 @@ public class Main : Node
 	public override void _Ready()
 	{
 		GD.Randomize();
-		NewGame();
+		//NewGame();
 	}
 
 //  // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -90,4 +95,3 @@ public class Main : Node
 //      
 //  }
 }
-
